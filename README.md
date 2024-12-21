@@ -27,3 +27,17 @@ This is a Sign Language Classifier implemented in Python for **COMS 4701 - Artif
 </div>
 
 ## Usage
+1. Install required dependencies: `pip install numpy pandas matplotlib scikit-learn keras tensorflow`.
+2. Ensure you have the necessary csv file datasets, examples are provided [here](https://drive.google.com/drive/u/0/folders/1DxbyfpckcII5Q0dSBKzoboiArjtE4lKz).
+3. Run the script: `python sign_language.py`.
+
+***OR IF USING JUPYTER NOTEBOOK***:
+1. Open the notebook `jupyter notebook sign_language.ipynb`.
+2. Run the cells sequentially.
+
+## Files
+- `accuracy.jpg`: A plot showing accuracy over multiple epochs on a random seed.
+- `examples.jpg`: examples of data from `train.csv` visualized.
+- `sign_language.ipynb`: Jupyter notebook containing the CNN implementation.
+- `sign_language.py`: Python script containing the CNN implementation.
+
