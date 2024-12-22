@@ -11,7 +11,7 @@ This is a Sign Language Classifier implemented in Python for **COMS 4701 - Artif
 </div>
 
 ## Training the Model
-- The `create_model` function defines a convolutional neural network (CNN) for classifying the data into one of 26 classes (letters of the alphabet). The input layer accepts 28 x 28 pixel 1 channel images (grayscale).
+- The `create_model` function defines the CNN for classifying the data into one of 26 classes (letters of the alphabet). The input layer accepts 28 x 28 pixel 1 channel images (grayscale).
 - Next, there are two *Conv2D* layers with *ReLU* activation for feature extraction, each followed by *MaxPooling2D* for downsampling. The model uses a fully connected Dense layer with 128 neurons for high-level feature learning, a Dropout layer to prevent overfitting, and an output layer with 26 neurons and a softmax activation function to produce class probabilities.
 - The model is compiled with the Adam optimizer and Categorical Crossentropy (CCE) loss.
 - The prepare_data function normalizes pixel values to the range [0, 1] and reshapes images for compatibility with the CNN.
